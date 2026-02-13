@@ -1,0 +1,18 @@
+def number_pattern(n):
+    # Check if argument is not an integer
+    if not isinstance(n, int):
+        return "Argument must be an integer value."
+    
+    # Check if integer is less than 1
+    if n < 1:
+        return "Argument must be an integer greater than 0."
+    
+    result = ""
+    
+    # Use a for loop
+    for i in range(1, n + 1):
+        result += str(i)
+        if i != n:
+            result += " "
+    
+    return result
